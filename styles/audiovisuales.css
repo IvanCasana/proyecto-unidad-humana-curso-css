@@ -1,0 +1,69 @@
+.side{
+    float: left;
+    width: auto;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.576);
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+}
+.galery{
+    margin: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.163);
+    float: left;
+    padding: 5px;
+    width: 33vw;
+    border-radius: 50%;
+}
+
+div.galery img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    
+
+}
+.description{
+    padding: 15px;
+    text-align: center;
+}
+
+.video {
+    border-radius: 15%;
+    padding: 20px;
+    width: 70%; /* Para que se ajuste al contenedor */
+    height: auto; /* Mantener relación de aspecto */
+    object-fit: cover; /* Mantener proporción */
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+    width: 33vw;
+
+
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.575); /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fullscreen video {
+    width: 90%; /* Ajusta el tamaño del video en fullscreen */
+    height: auto;
+    max-width: 100%; /* No exceder el tamaño de la pantalla */
+    max-height: 100%; /* No exceder la altura de la pantalla */
+    border-radius: 0; /* Sin borde redondeado en fullscreen */
+    object-fit: contain; /* Mantener relación de aspecto */
+}

@@ -1,0 +1,36 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    border-collapse: collapse;
+    border: 2px solid white;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.476);
+    width:80vw ;
+}
+th{
+    border: 5px solid rgba(255, 127, 80, 0.774);
+    background-color: rgba(255, 127, 80, 0.419);
+    padding: 5px;
+    text-align: center;
+}
+td:not(.estado,.lugar){
+    padding: 20px 5px;
+    text-align:left ;
+    
+}
+
+.estado,.lugar{
+    text-align:center;
+}
+h2{
+    margin: 0;
+    padding: 20px;
+}
+
+tr:hover td{
+    background-color: rgba(255, 245, 238, 0.475);
+}

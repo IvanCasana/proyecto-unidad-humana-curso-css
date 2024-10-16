@@ -1,0 +1,112 @@
+.subtitulo{
+    margin: 15px;
+    padding: 0;
+
+}
+hr {
+    border: 1px solid #ffffffdd; /* Color y grosor de la línea */
+    margin: 20px auto; /* Espacio alrededor de la línea */
+}
+
+.container{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.image1{
+    margin: 0 0 20px 20px;
+    width: 300px;
+    height: auto;
+    order: 1; /* Coloca image1 en el primer lugar (arriba) */
+    border-radius: 50%;
+}
+.image2{
+    margin: 0 20px 20px 0;
+    width: 300px;
+    height: auto;
+    border-radius: 50%;
+
+}
+
+.image3{
+    margin: 0  auto;
+    width: auto;
+    height: 90vh;
+    position: relative;
+    display: block;
+    object-fit: cover; /* Mantiene el aspecto de la imagen */
+    border-radius: 50%;
+
+    
+}
+article {
+    display: flex; /* Cambiar a flexbox */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no hay suficiente espacio */
+    justify-content: space-between; /* Espacio entre los elementos */
+}
+
+p {
+    font-size: 18px;
+    flex-grow: 1; /* Permitir que el párrafo ocupe el espacio restante */
+    margin: 0; /* Eliminar márgenes para un mejor alineamiento */
+}
+.titulo-interno{
+    font-size: 24px;
+    padding: 0 0 0 20px;
+
+}
+.apoyar>p{
+    border: 1px solid #ffffffdd; /* Color y grosor de la línea */
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+    
+}
+h3{
+    background-color: #ffffff37;
+}
+
+.image-container {
+    display: flex; /* Usar flexbox para disposición */
+    align-items: center; /* Alinear verticalmente al principio */
+    margin-bottom: 20px; /* Espacio entre contenedores */
+    flex-wrap: nowrap; /* No permitir que los elementos se envuelvan */
+}
+.image-container-left {
+    justify-content: flex-start; /* Alinear al inicio (izquierda) */
+}
+
+.image-container-right {
+    justify-content: flex-end; /* Alinear al final (derecha) */
+}
+.video-container{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.576);
+
+}
+.video{
+    border-radius: 15%;
+    padding: 20px;
+
+}
+
+.fullscreen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.575); /* Fondo oscuro */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.fullscreen video {
+    width: 45%; /* Agranda el video */
+    height: auto;
+    border-radius: 0; /* Sin borde redondeado en fullscreen */
+}
